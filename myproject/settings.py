@@ -80,10 +80,22 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'demodatabase',
+        # 'CLIENT': {
+        #    'host': 'mongodb+srv://rtza:rtz08@cluster0.9vlrtxx.mongodb.net/?retryWrites=true&w=majority'
+        #     ,'name':'testdb',
+        #     "authMechanism":"SCRAM-SHA-1" #For atlas cloud db
+        # }
     }
 }
 
